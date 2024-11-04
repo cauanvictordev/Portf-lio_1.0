@@ -1,0 +1,270 @@
+body {
+    color: #ffffff;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: 0;
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(ellipse at top left, #ffb347 0%, transparent 50%), /* Amarelo suave no topo esquerdo */
+        radial-gradient(ellipse at top right, #ffb347 0%, transparent 50%), /* Amarelo suave no topo direito */
+        radial-gradient(ellipse at bottom left, #ffcc33 0%, transparent 50%), /* Laranja mais vibrante no canto inferior esquerdo */
+        radial-gradient(ellipse at bottom right, #ffcc33 0%, transparent 50%), /* Laranja mais vibrante no canto inferior direito */
+        radial-gradient(ellipse at center, rgba(255, 94, 0, 0.6) 0%, rgba(255, 94, 0, 0.8) 100%), /* Laranja centralizado com opacidade */
+        linear-gradient(45deg, #ff8c00 25%, transparent 25%, transparent 75%, #ff8c00 75%, #ff8c00), /* Listras laranjas diagonais */
+        linear-gradient(-45deg, #ff8c00 25%, transparent 25%, transparent 75%, #ff8c00 75%, #ff8c00); /* Listras laranjas em outra direção */
+    z-index: -1;
+}
+  
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+  }
+  
+  a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #ff5e00;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center -45px; /* Ajusta a posição da imagem para mostrar mais conteúdo acima */
+    border-radius: 50%;
+    border: 5px solid #fff;
+    display: block;
+    margin: -10px auto 0;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  h1 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 10px 0;
+  }
+  
+  h2 {
+    color: #ff0000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 5px 0;
+  }
+  
+  main {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    color: #e0e0e0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.979);
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #e0e0e0;
+    line-height: 1.5;
+  }
+  
+  /* Footer styling */
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-links a {
+    text-align: center;
+    color: #e0e0e0;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #ff5e00;
+  }
+  
+  .social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #3bfc00;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+  }
+  
+  .social-links i {
+    color: #0A66C2; /* Azul padrão do LinkedIn */
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a[href*="linkedin"] i {
+    color: #0A66C2; /* Azul do LinkedIn */
+  }
+  
+  .social-links a[href*="instagram"] i {
+    color: #C13584; /* Roxo próximo ao tom do Instagram */
+  }
+  
+  .social-links a:hover i {
+    color: #FF5E00; /* Cor ao passar o mouse, ou defina outra cor de destaque */
+  }
+  
+  
+  .social-links a:hover i {
+    color: #ff5e00; /* Cor ao passar o mouse */
+  }
+  
+  
+  .pizza {
+    padding: 0 50px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* CSS para a Seção de Contato */
+#contato {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#contato h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#contato p {
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Estilo dos Links de Contato */
+#contato .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#contato .social-links a {
+    color: #e0e0e0;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contato .social-links a:hover {
+    color: #ff5e00; /* Cor de destaque ao passar o mouse */
+}
+
+#contato .social-links i {
+    margin-right: 8px;
+}
+
+
+
+/* Responsividade para a Seção de Contato */
+@media (max-width: 768px) {
+    #contato {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    #contato h2 {
+        font-size: 1.5em;
+        margin-bottom: 8px;
+    }
+
+    #contato p {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    /* Ajustes de espaçamento e layout para os links de contato em telas menores */
+    #contato .social-links {
+        flex-direction: column; /* Empilha os links verticalmente */
+        gap: 15px;
+    }
+
+    #contato .social-links a {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+
+    #contato .social-links i {
+        margin-right: 5px;
+    }
+}
+
+/* Para dispositivos muito pequenos (como smartphones em modo retrato) */
+@media (max-width: 480px) {
+    #contato h2 {
+        font-size: 1.3em;
+    }
+
+    #contato p {
+        font-size: 0.95em;
+        line-height: 1.4;
+    }
+
+    #contato .social-links a {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
